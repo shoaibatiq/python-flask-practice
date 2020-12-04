@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+	{% block content %}
+	<h6> Your Username: {{uname}}</h6>
+	{% if check %}
+		<h3>Your username is valid.</h3>
+	{% else %}
+		<h3>Your username have following errors:</h3>
+		<ul>
+		{% for i in eRrors %}
+			<li>{{i}}</li>
+		{% endfor %}
+	{% endif %}
+{% endblock %}

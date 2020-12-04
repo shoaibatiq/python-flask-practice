@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="jumbotron">
+	  <h1 class="display-4">Welcome To Homepage!</h1>
+	  <p class="lead">Check username validity here.</p>
+	  <hr class="my-4">
+	  
+	  <form action="{{url_for('username_submit')}}">
+	  	<label for="username"><input type="text" name="username" value="" placeholder="Username"></label>
+	  	<label for="submit"><input type="submit" name="submit" value="Submit"></label>
+	  </form>
+	</div>
+{% endblock %}

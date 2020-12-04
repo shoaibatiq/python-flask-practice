@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<ul>
+		{% for i in names %}
+			{% if i[-1]=='y' %}
+				<li>{{i[:-1]+'iful'}}</li>
+			{% else %}
+				<li>{{i+'y'}}</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</body>
+</html>
